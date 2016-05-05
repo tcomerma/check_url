@@ -43,7 +43,7 @@ STATE_UNKNOWN=3
 URL=""
 TIMEOUT=40
 
-# Proces de parametres
+# Parameters processing
 while getopts ":u:t:ho:" Option
 do
 	case $Option in
@@ -64,7 +64,7 @@ fi
 
 
 
-# Llegir URL
+# Read URL
 
 OUT=`curl $URL $OPTIONS --max-time $TIMEOUT -o /dev/null -s --write-out "$CURL_WRITE_OUT"`
 CURL_STATUS=$?
